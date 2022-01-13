@@ -2,21 +2,21 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](/LICENSE)
 [![Twitter: elbruno](https://img.shields.io/twitter/follow/elbruno.svg?style=social)](https://twitter.com/kartben)
-[![PlatformIO CI](https://github.com/kartben/wioterminal-azureiothub-sample/workflows/PlatformIO%20CI/badge.svg)](https://github.com/elbruno/AzureIoTSquirrelFeeder/actions?query=workflow%3A%22PlatformIO+CI%22)
+![GitHub: elbruno](https://img.shields.io/github/followers/elbruno?style=social)
 
 During the last couple of months, I’ve having fun with my new friends at home: 🐿️🐿️🐿️. These little ones, are extremelly funny, and they literally don’t care about the cold 🥶❄️☃️.
 
-[<img src="img/squirrell-on-the-snow.png" width="350"/>](squirrell-on-the-snow.png)
+[<img src="img/squirrell-on-the-snow.png" width="250"/>](squirrell-on-the-snow.png)
 
-So, I decided to help them and build an Automatic Feeder using Azure IoT, a Wio Terminal and maybe some more devices. 
-
-You can check the Azure IoT project here [Azure IoT - Squirrel Feeder](https://aka.ms/AzureIoTSquirrelFeederGitHub).
+So, I decided to help them and build an Automatic Feeder using Azure IoT, a Wio Terminal and maybe some more devices. You can check the Azure IoT project here [Azure IoT - Squirrel Feeder](https://aka.ms/AzureIoTSquirrelFeederGitHub).
 
 Once the feeder was ready, I decided to add a new feature to the scenario, detecting when a squirrel 🐿️ is nearby the feeder. In this repository I'll share:
 
-- How to create an object recognition model using [Azure Custom Vision](https://customvision.ai)
-- How to export the model to a Docker image format
-- How to run the model in an Azure Function
+- How to create an object recognition model using [Azure Custom Vision](https://aka.ms/CustomVision-ci).
+- How to export the model to a Docker image format.
+- How to run the model in an Azure Function.
+
+[<img src="img/CustomVisionSavedModelDemo.gif" width="250"/>](squirrell-on-the-snow.png)
 
 ## Custom Vision
 
@@ -51,7 +51,7 @@ You can check the exported model in the "[CustomVision/DockerLinuxExported/](Cus
 
 ## Azure Function
 
-Time to code! Let's create a new Azure Function Using [Visual Studio Code]() and the [Azure Functions for Python](https://aka.ms/azure-functions-python) extension. 
+Time to code! Let's create a new Azure Function Using [Visual Studio Code](https://code.visualstudio.com/) and the [Azure Functions for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) extension. 
 
 
 ### Changes to `__ init __.py`
@@ -129,9 +129,21 @@ You can view a sample function completed code in the "[AzureFunction/CustomVisio
 
 ## Testing the sample
 
-Once our code is complete we can test the sample in local mode or in Azure Functions, after we deploy the Function. In both scenarios we can use any tool that can perform HTTP POST requests to the Azure Function to test our function.
+Once our code is complete we can test the sample in local mode or in Azure Functions, after we deploy the Function. In both scenarios we can use any tool or language that can perform HTTP POST requests to the Azure Function to test our function.
 
-Postman is a great tool to test our function. You can use it to test the function in local mode and also to test the function once it has been deployed to Azure Functions. You can download the Postman extension for Azure Functions here: [https://aka.ms/azure-functions-postman](https://aka.ms/azure-functions-postman).
+### Test using Curl
+
+Curl is a command line tool that allows you to send HTTP requests to a server. It is a very simple tool that can be used to send HTTP requests to a server. We can test the local function using curl with the following command:
+
+```bash
+❯ curl http://localhost:7071/api/CustomVisionSquirrelDetectorFunction -Method 'Post' -InFile 01.jpg
+```
+
+<img src="img/TestFunctionUsingCurl.jpg" width="450"/>
+
+### Test using Postman
+
+**Postman** is a great tool to test our function. You can use it to test the function in local mode and also to test the function once it has been deployed to Azure Functions. You can download Postman [here](https://www.postman.com/downloads/).
 
 In order to test our function we need to know the function url. In Visual Studio Code, we can get the url by clicking on the Functions section in the Azure Extension. Then we can right click on the function and select "Copy Function URL".
 
