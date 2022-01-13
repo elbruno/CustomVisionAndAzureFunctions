@@ -157,6 +157,11 @@ We are now ready to test our function in Azure Functions. To do so we need to de
 
 ## Additional Resources
 
+You can check a session recording about this topic in English and Spanish.
+
+- Eng - [Azure Custom Vision running on Azure functions](https://aka.ms/ServerlesssinJan1.11)
+- Spa - [Coming soon](https://aka.ms/ServerlesssinJan1.11)
+
 These links will help to understand specific implementations of the sample code:
 
 - [Microsoft Docs - What is Custom Vision?](https://aka.ms/CustomVision-ci)
