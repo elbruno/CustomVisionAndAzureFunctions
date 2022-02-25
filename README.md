@@ -1,10 +1,5 @@
 # Object recognition using Azure Custom Vision AI and Azure Functions
 
-## Introduction
-### What is it?
-Demo changes for main branch 
-Second change
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](/LICENSE)
 [![Twitter: elbruno](https://img.shields.io/twitter/follow/elbruno.svg?style=social)](https://twitter.com/kartben)
 ![GitHub: elbruno](https://img.shields.io/github/followers/elbruno?style=social)
