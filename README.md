@@ -5,6 +5,7 @@
 ![GitHub: elbruno](https://img.shields.io/github/followers/elbruno?style=social)
 
 *Ejemplo para la sesión de GitHub y Visual Studio Code.*
+* cambios en la nueva rama *
 
 During the last couple of months, I’ve having fun with my new friends at home: 🐿️🐿️🐿️. These little ones, are extremelly funny, and they literally don’t care about the cold 🥶❄️☃️.
 
