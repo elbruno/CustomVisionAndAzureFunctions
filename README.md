@@ -4,10 +4,6 @@
 [![Twitter: elbruno](https://img.shields.io/twitter/follow/elbruno.svg?style=social)](https://twitter.com/kartben)
 ![GitHub: elbruno](https://img.shields.io/github/followers/elbruno?style=social)
 
-*Ejemplo para la sesión de GitHub y Visual Studio Code.*
-* cambios en la nueva rama *
-* otro cambio en la nueva rama *
-
 During the last couple of months, I’ve having fun with my new friends at home: 🐿️🐿️🐿️. These little ones, are extremelly funny, and they literally don’t care about the cold 🥶❄️☃️.
 
 [<img src="img/squirrell-on-the-snow.png" width="250"/>](squirrell-on-the-snow.png)
